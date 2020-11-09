@@ -38,10 +38,8 @@ jobs:
     - name: Run frontend
       run: |
           cd react-redux-realworld-example-app
-          docker ps 
+          npm start
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
-        start: |
-         npm start
         working-directory: react-redux-realworld-example-app
