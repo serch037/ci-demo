@@ -43,5 +43,5 @@ jobs:
       uses: cypress-io/github-action@v2
       with:
         start: |
-         npm run 
+         npm start
         working-directory: react-redux-realworld-example-app
