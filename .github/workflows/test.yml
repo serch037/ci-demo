@@ -40,6 +40,7 @@ jobs:
           cd react-redux-realworld-example-app
           npm start &
     - name: Cypress run
-      uses: cypress-io/github-action@v2
-      with:
-        working-directory: react-redux-realworld-example-app
+      run: |
+          cd react-redux-realworld-example-app
+          ./node_modules/.bin/cypress run
+          
