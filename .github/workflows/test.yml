@@ -42,5 +42,4 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
-        spec: react-redux-realworld-example-app/cypress/integration/test/test_spec.js
         working-directory: react-redux-realworld-example-app
