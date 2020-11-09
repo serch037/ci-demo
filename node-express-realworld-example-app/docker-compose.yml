@@ -1,0 +1,16 @@
+version: '3'
+services:
+ database:
+  image: 'mongo'
+  container_name: 'realworld-mongo'
+  # environment:
+  #   - MONGO_INITDB_DATABASE=realworld
+  #   - MONGO_INITDB_ROOT_USERNAME=realworld
+  #   - MONGO_INITDB_ROOT_PASSWORD=realworld
+  volumes:
+    - /pgdata:/data/db
+  ports:
+    - 27017-27019:27017-27019
+
+volumes:
+  pgdata:
